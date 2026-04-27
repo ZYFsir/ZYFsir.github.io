@@ -2,12 +2,12 @@
     languageCode      = "zh-cn"
     languageName      = "中文"
     languagedirection = "ltr"
-    title             = "我的博客"
+    title             = "云喵盒子"
     weight            = 1
 
 [en]
     languageCode      = "en-us"
     languageName      = "English"
     languagedirection = "ltr"
-    title             = "My Blog"
+    title             = "CloudCat Box"
     weight            = 2

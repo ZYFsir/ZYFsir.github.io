@@ -5,8 +5,8 @@
     grid = true
 
 [footer]
-    since = 2024
-    launchDate = "2024-09-09"
+    since = 2026
+    launchDate = "2026-04-27"
 
 [widgets]
     # homepage = [
@@ -22,12 +22,12 @@
     default = "auto"
 
 [comments]
-    enabled  = true
+    enabled  = false
     provider = "waline"
     
 [comments.waline]
     # IMPORTANT: Replace this with your own Waline server URL!
-    serverURL    = "https://waline-demo.liuhouliang.com/"
+    serverURL    = ""
     pageview     = true
     emoji        = ["https://unpkg.com/@waline/emojis@1.0.1/weibo"]
     requiredMeta = ["name"]

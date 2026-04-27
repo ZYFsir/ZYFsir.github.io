@@ -1,7 +1,7 @@
 # Change baseurl before deploy
 baseurl      = "https://zyfsir.github.io/"
 languageCode = "zh-cn"
-title        = "我的博客"
+title        = "云喵盒子"
 
 # Set default language
 defaultContentLanguage = "zh"

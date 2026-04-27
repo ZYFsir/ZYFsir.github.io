@@ -8,7 +8,7 @@ favicon        = "img/favicon.jpg"
 SortBy              = "default"
 
 [footer]
-    customText = "这里可以自定义footer内容"
+    customText = "一起找点有趣的事做做吧"
 
 [dateFormat]
     # 使用当地日期格式
@@ -22,7 +22,7 @@ SortBy              = "default"
 
 [article]
     headingAnchor = true
-    math          = false
+    math          = true
     readingTime   = true
 
     [article.license]
