@@ -1,0 +1,13 @@
+[zh]
+    languageCode      = "zh-cn"
+    languageName      = "中文"
+    languagedirection = "ltr"
+    title             = "云喵盒子"
+    weight            = 1
+
+[en]
+    languageCode      = "en-us"
+    languageName      = "English"
+    languagedirection = "ltr"
+    title             = "CloudCat Box"
+    weight            = 2
