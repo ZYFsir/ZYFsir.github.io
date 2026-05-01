@@ -22,16 +22,20 @@
     default = "auto"
 
 [comments]
-    enabled  = false
-    provider = "waline"
-    
-[comments.waline]
-    # IMPORTANT: Replace this with your own Waline server URL!
-    serverURL    = ""
-    pageview     = true
-    emoji        = ["https://unpkg.com/@waline/emojis@1.0.1/weibo"]
-    requiredMeta = ["name"]
+    enabled  = true
+    provider = "giscus"
 
-    [comments.waline.locale]
-        admin       = "Admin"
-        placeholder = ""
+    [comments.giscus]
+        repo             = "ZYFsir/ZYFsir.github.io"
+        repoID           = "R_kgDOSNeClg"
+        category         = "Announcements"
+        categoryID       = "DIC_kwDOSNeCls4C8Gqv"
+        mapping          = "pathname"
+        strict           = 0
+        reactionsEnabled = 1
+        emitMetadata     = 0
+        inputPosition    = "top"
+        lightTheme       = "light"
+        darkTheme        = "dark_dimmed"
+        lang             = "zh-CN"
+        loading          = "lazy"
