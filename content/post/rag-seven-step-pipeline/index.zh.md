@@ -3,7 +3,7 @@ title: "生产环境 RAG 的七步流水线：PR 矛盾没被解决，只是被�
 description: "Precision-Recall 矛盾是检索式记忆系统的结构性问题。工业界的答案不是解决它，而是用七步流水线管理它。"
 date: 2026-05-01
 lastmod: 2026-05-01
-weight: 6
+weight: 3
 categories:
     - Agent
 tags:

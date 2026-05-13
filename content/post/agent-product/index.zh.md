@@ -3,7 +3,7 @@ title: AI产品实际测评
 description: 测试使用名声比较大的ai产品，看看实际效果。
 date: 2026-04-28
 lastmod: 2026-04-28
-weight: 2
+weight: 3
 categories:
   - Agent
 tags:
