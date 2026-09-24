@@ -159,7 +159,8 @@ if [ $CONV_RC -ne 0 ]; then
   die "转换阶段失败" "详情见 $LOG_FILE"
 fi
 
-IFS=$'\t' read -r NEW_COUNT NEW_SLUGS WARN_N ERR_N SRC_FILES <<< "$(node -e '
+# 用非空白分隔符 |（tab/空格属空白，IFS 会折叠连续分隔符，导致空字段错位）
+IFS='|' read -r NEW_COUNT NEW_SLUGS WARN_N ERR_N SRC_FILES <<< "$(node -e '
   const fs=require("fs");
   const r=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));
   process.stdout.write([
@@ -168,8 +169,10 @@ IFS=$'\t' read -r NEW_COUNT NEW_SLUGS WARN_N ERR_N SRC_FILES <<< "$(node -e '
     r.warnings.length,
     r.errors.length,
     r.sourceFiles
-  ].join("\t"));
+  ].join("|"));
 ' "$REPORT_FILE")"
+NEW_COUNT="${NEW_COUNT:-0}"
+SRC_FILES="${SRC_FILES:-0}"
 
 info "解析结果: $NEW_COUNT 篇有效文章（源 markdown 文件 $SRC_FILES 个），警告 $WARN_N，错误 $ERR_N"
 
